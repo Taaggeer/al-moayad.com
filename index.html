@@ -252,6 +252,33 @@
             color: #fff;
         }
 
+        /* --- زر الاتصال العائم (جديد) --- */
+        .call-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            /* المسافة من الأسفل = مسافة الواتساب (30) + ارتفاع الواتساب (60) + مسافة بينهما (15) */
+            bottom: 105px; 
+            right: 30px;
+            background-color: var(--secondary-color); /* اللون الذهبي */
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .call-float:hover {
+            background-color: #a88543;
+            transform: scale(1.1);
+            color: #fff;
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -601,6 +628,11 @@
         </div>
     </footer>
 
+    <!-- زر الاتصال العائم (جديد) -->
+    <a href="tel:966560077098" class="call-float">
+        <i class="fas fa-phone"></i>
+    </a>
+
     <!-- زر الواتساب العائم -->
     <a href="https://wa.me/966560077098" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
@@ -686,7 +718,9 @@
         });
     </script>
 </body>
-</html> 
+</html>
+
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NNNY7DM81"></script>
 <script>
@@ -696,3 +730,4 @@
 
   gtag('config', 'G-8NNNY7DM81');
 </script>
+
